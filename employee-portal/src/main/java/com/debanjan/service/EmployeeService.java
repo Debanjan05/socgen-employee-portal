@@ -2,12 +2,12 @@ package com.debanjan.service;
 
 import java.util.List;
 
-import com.debanjan.entity.Employee;
+import com.debanjan.dto.EmployeeDTO;
 
 public interface EmployeeService {
 	
-	public Employee register(Employee employee);
+	public EmployeeDTO register(EmployeeDTO employee);
 	
-	public List<Employee> getEmployees();
+	public List<EmployeeDTO> getEmployees();
 
 }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.debanjan.dto.EmployeeDTO;
 import com.debanjan.entity.Employee;
 import com.debanjan.service.EmployeeService;
 
@@ -22,13 +23,13 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	@PostMapping(value = "/register")
-	public ResponseEntity<Employee> registerEmployee(@RequestBody Employee employee) {
-		return new ResponseEntity<Employee>(employeeService.register(employee), HttpStatus.OK);
+	public ResponseEntity<EmployeeDTO> registerEmployee(@RequestBody EmployeeDTO employee) {
+		return new ResponseEntity<EmployeeDTO>(employeeService.register(employee), HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/details")
-	public ResponseEntity<List<Employee>> getDetails() {
-		return new ResponseEntity<List<Employee>>(employeeService.getEmployees(), HttpStatus.OK);
+	public ResponseEntity<List<EmployeeDTO>> getDetails() {
+		return new ResponseEntity<List<EmployeeDTO>>(employeeService.getEmployees(), HttpStatus.OK);
 	}
 
 }

@@ -2,7 +2,7 @@ package com.debanjan.dto;
 
 public class EmployeeDTO {
 
-	private Integer empId;
+	private Integer employeeId;
 
 	private String firstName;
 
@@ -10,16 +10,16 @@ public class EmployeeDTO {
 
 	private String gender;
 
-	private String dob;
+	private String dateOfBirth;
 
 	private String department;
 
-	public Integer getEmpId() {
-		return empId;
+	public Integer getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setEmpId(Integer empId) {
-		this.empId = empId;
+	public void setEmployeeId(Integer empId) {
+		this.employeeId = empId;
 	}
 
 	public String getFirstName() {
@@ -46,12 +46,12 @@ public class EmployeeDTO {
 		this.gender = gender;
 	}
 
-	public String getDob() {
-		return dob;
+	public String getDateOfBirth() {
+		return dateOfBirth;
 	}
 
-	public void setDob(String dob) {
-		this.dob = dob;
+	public void setDateOfBirth(String dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getDepartment() {
@@ -64,8 +64,8 @@ public class EmployeeDTO {
 
 	@Override
 	public String toString() {
-		return "EmployeeDTO [empId=" + empId + ", firstName=" + firstName + ", lastName=" + lastName + ", gender="
-				+ gender + ", dob=" + dob + ", department=" + department + "]";
+		return "EmployeeDTO [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", gender=" + gender + ", dateOfBirth=" + dateOfBirth + ", department=" + department + "]";
 	}
 
 }
