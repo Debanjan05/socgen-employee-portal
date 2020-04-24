@@ -73,6 +73,7 @@ public class EmployeeControllerTest {
 		verifyNoMoreInteractions(employeeService);
 	}
 
+	//Test case for adding an employee
 	@Test
 	public void addEmployeeTest() throws Exception {
 		EmployeeDTO empDto = emp.get(0);
